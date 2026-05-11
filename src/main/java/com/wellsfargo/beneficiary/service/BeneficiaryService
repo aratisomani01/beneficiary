@@ -1,0 +1,9 @@
+package com.wellsfargo.beneficiary.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BeneficiaryService {
+
+    // Beneficiary services will be added here
+}
