@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "banker")
 @Data
-public class Banker {
+public class Banker extends AuditBaseEntity {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,17 +20,4 @@ public class Banker {
 
         @Column(nullable = false, length = 255)
         private String pwd;
-
-        @Column(name = "created_by", length = 100)
-        private String createdBy;
-
-        @Column(name = "created_on")
-        private LocalDateTime createdOn;
-
-        @Column(name = "updated_by", length = 100)
-        private String updatedBy;
-
-        @Column(name = "updated_on")
-        private LocalDateTime updatedOn;
-
     }

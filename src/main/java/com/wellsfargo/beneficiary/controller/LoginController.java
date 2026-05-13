@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class LoginController {
 
-    private final LoginService authService;
+    private final LoginService loginService;
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> login(@Valid @RequestBody LoginRequestDTO request) {
         log.info("Login request received for email: {}", request.getEmail());
-        LoginResponseDTO response = authService.login(request);
+        LoginResponseDTO response = loginService.login(request);
         return ResponseEntity.ok(response);
     }
 }
