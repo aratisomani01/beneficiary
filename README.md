@@ -1,3 +1,4 @@
+May 11th-2026 - Stage 1
 # Beneficiary Project — Login Feature
 
 ## Overview
@@ -240,3 +241,7 @@ REACT\_APP\_API\_URL=http://localhost:8080/beneficiary-api
 Beneficiary Project — Stage 1  
 *Built with Spring Boot + React + MySQL*
 
+***************************************************************************************************************
+May 13th-2026 : Checkin 2
+Added @transactional support for account operations
+Added 11 files , modified 12 files , Total 23 files committed
